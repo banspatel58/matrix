@@ -31,7 +31,7 @@ def maximum_subarray(nums: List[int]) -> int:
     if n == 1:
         return nums[0]
 
-    dp = nums
+    dp = [*nums]
 
     for i in range(1, n):
         dp[i] = max(nums[i], nums[i] + dp[i - 1])
