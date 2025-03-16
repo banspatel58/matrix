@@ -40,7 +40,7 @@ def maximum_subarray(nums: List[int]) -> int:
     return max(dp)
 
 if __name__ == '__main__':
-    maximum_subarray([-2,1,-3,4,-1,2,1,-5,4])
+    maximum_subarray([2, 3, -8, 7, -1, 2, 3])
     maximum_subarray([-2])
     maximum_subarray([5,4,-1,7,8])
     maximum_subarray([-2, -1])
