@@ -16,7 +16,7 @@ Explanation: Only one platform is needed.
 '''
 from typing import List
 
-def max_platform_needed(arr: List[int], dep: List[int]) -> int:
+def min_platform_needed(arr: List[int], dep: List[int]) -> int:
     n = len(arr)
 
     arr.sort()
@@ -34,14 +34,14 @@ def max_platform_needed(arr: List[int], dep: List[int]) -> int:
         count += 1
 
         ans = max(count, ans)
-    print("Max platforms needed are: " + str(ans))
+    print("Min platforms needed are: " + str(ans))
     return ans
 
 
 if __name__ == '__main__':
     arrival = [900, 940, 950, 1100, 1500, 1800]
     departure = [910, 1200, 1120, 1130, 1900, 2000]
-    max_platform_needed(arrival, departure)
+    min_platform_needed(arrival, departure)
     arrival = [1,  5]
     departure = [3,  7]
-    max_platform_needed(arrival, departure)
+    min_platform_needed(arrival, departure)
